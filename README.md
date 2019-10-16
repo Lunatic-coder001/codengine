@@ -3,7 +3,7 @@ Get your Hands dirty on these simple problems....
 
   Solve the following questions:
   
-  1. Print all Armstrong Numbers in an interval.
+ 1. Print all Armstrong Numbers in an interval.
   
   2.Convert Decimal to Binary number system.
   
