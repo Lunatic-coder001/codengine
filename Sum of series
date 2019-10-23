@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main()
+{
+    //To print sum of series '1+11+111+1111+....'
+    int r,c,n,i,k=1,sum=1;
+    printf("Enter the value of 'N' : ");
+    scanf("%d",&n);
+    for (r=1;r<=n;r++)
+    {
+        for(c=1;c<=r;c++)
+        {
+            printf("1");
+        }
+        printf("+");
+    }
+    for (i=1;i<n;i++)
+    {
+        if (i%2==0)
+        {
+            k+=pow(10,i)+1;
+            sum=sum+k;
+            printf("\n%d",k);
+        }
+        else
+        {
+        k+=pow(10,i);
+        sum=sum+k;
+        printf("\n%d",k);
+        }
+
+    }
+    printf("\nThe Sum is : %d",sum);
+    return 0;
+}
